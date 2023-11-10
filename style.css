@@ -1,0 +1,154 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .sidenav {
+    background: #2f2f2f;
+    width: 25vw;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+  }
+  
+  .navigation-list {
+    padding: 40px;
+    list-style-type: none;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: #999;
+  }
+  
+  li a:hover{
+    color: white;
+  }
+  
+  .main-content {
+    margin-left: 25vw;
+    background: white;
+  }
+  
+  .head-content {
+    background: url("https://img.freepik.com/free-photo/high-angle-desktop-with-laptop-copy-space_23-2148430882.jpg?size=626&ext=jpg&ga=GA1.1.386372595.1698710400&semt=ais");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: auto;
+    height: 100vh;
+  }
+  
+  .aboutMe-btn {
+    cursor: pointer;
+  }
+  
+  .aboutMe-btn a {
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #0e0;
+  }
+  
+  .wrapper {
+    margin-top: 5%;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .line__1,
+  .line__2 {
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 0.5rem auto;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .line__1 {
+    border-right: 2px solid rgba(17, 17, 17, 0.9);
+    animation: animated-text__1 3s steps(20, end) 1s 1 normal both,
+      animated-cursor__1 900ms steps(20, end) 4;
+  }
+  
+  .line__2 {
+    border-right: 2px solid rgba(17, 17, 17, 0.9);
+    animation: animated-text__2 5s steps(30, end) 1s 1 normal both,
+      animated-cursor__2 900ms steps(30, end) infinite;
+    -webkit-animation-delay: 7s;
+    animation-delay: 3.5s;
+  }
+  
+  @keyframes animated-cursor__1 {
+    from {
+      border-right-color: rgba(255, 255, 255, 0.8);
+    }
+    to {
+      border-right-color: rgba(17, 17, 17, 0.9);
+    }
+  }
+  
+  @keyframes animated-cursor__2 {
+    from {
+      border-right-color: rgba(255, 255, 255, 0.8);
+    }
+    to {
+      border-right-color: rgba(17, 17, 17, 0.9);
+    }
+  }
+  
+  @keyframes animated-text__1 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 180px;
+    }
+  }
+  
+  @keyframes animated-text__2 {
+    from {
+      width: 0;
+    }
+    to {
+      width: 360px;
+    }
+  }
+  
+  .information {
+    margin-top: 10px;
+    font-size: 200%;
+    padding: 40px;
+  }
+  
+  .My-content p {
+    font-size: 1.3rem;
+  }
+  
+  .My-progress {
+    width: 100%;
+  }
+  
+  .my-projects {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .skills {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .progress-bar {
+    background: #959595;
+    width: 60%;
+  }
